@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style_ajuda.css">
-    <title>Ajuda</title>
+    <link rel="stylesheet" href="../css/style_contato.css">
+    <title>Contato</title>
 </head>
 
 <body>
@@ -27,50 +27,42 @@
             </ul>
         </nav>
         <section id="banner">
-            <div class="ajuda">
-                <h1>Precisa de ajuda?</h1>
-                <p>Aqui estão reunidas as principais dúvidas encontradas por nossos clientes com suas respectivas
-                    soluções,
-                    talvez a sua seja uma delas.</p>
+            <div class="contato">
+                <h1>Fale conosco</h1>
+                <p>Se interessou por algum plano? Entre em contato para que possamos conversar e atender sua
+                    necessidade. Preencha os dados abaixo e deixe sua mensagem</p>
             </div>
         </section>
     </header>
 
     <main>
-        <div class="duvidas">
-            <h2>Dúvidas frequentes</h2>
-            <ul>
-                <li>
-                    <p>Dúvida 1</p>
-                    <p>Resposta 1</p>
-                </li>
-
-                <li>
-                    <p>Dúvida 2</p>
-                    <p>Resposta 2</p>
-                </li>
-
-                <li>
-                    <p>Dúvida 3</p>
-                    <p>Resposta 3</p>
-                </li>
-
-                <li>
-                    <p>Dúvida 4</p>
-                    <p>Resposta 4</p>
-                </li>
-            </ul>
-        </div>
-        <div class="mensagem">
-            <h2>Não encontrou o que procurava?</h2>
+        <div id="dados">
+            <h2>Dados para contato</h2>
             <form>
-                <label>
-                    Nos deixe uma mensagem para que possamos ajudar:<br>
-                    <textarea style="resize: none" placeholder="Escreva sua mensagem aqui" maxlength="600" cols="50"
-                        rows="10"></textarea><br>
-                </label>
-                <button class="botao_enviar">Enviar</button>
+                <label for="inputNome">Nome</label><br>
+                <input class="input-text" id="inputNome" type="text" placeholder="Insira seu nome completo" required
+                    maxlength="50" minlength="4"><br>
+
+                <label for="inputTelefone">Telefone</label><br>
+                <input class="input-text" id="inputTelefone" type="text" placeholder="Insira seu telefone (XX) XXXX-XXXX"
+                    required minlength="14"><br>
+
+                <label for="inputCelular">Celular</label><br>
+                <input class="input-text" id="inputCelular" type="text" placeholder="Insira seu celular (XX) XXXXX-XXXX"
+                    minlength="14"><br>
+
+                <label for="inputEmail">E-mail</label><br>
+                <input class="input-text" id="inputEmail" type="text" placeholder="Insira seu e-mail" required
+                    maxlength="50" minlength="12"><br>
+
+                <label>Mensagem</label><br>
+                <textarea style="resize: none" placeholder="Escreva sua mensagem aqui (opcional)" maxlength="600" cols="50"
+                    rows="10"></textarea><br>
+                <button class="botao_enviar">Enviar</button><br>
             </form>
+        </div>
+        <div class="fundo">
+            <img src="../img/icon/conversation.png" alt="ícone de um balão de diálogo">
         </div>
     </main>
 
