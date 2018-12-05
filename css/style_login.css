@@ -84,7 +84,7 @@ body
     height: 39vw;
 }
 
-#banner .planos
+#banner .login
 {
     align-items: center;
     color: white;
@@ -95,7 +95,7 @@ body
     width: 100%;
 }
 
-#banner .planos h1
+#banner .login h1
 {
     font-weight: 100;
     font-size: 4vw;
@@ -104,7 +104,7 @@ body
     text-transform: uppercase;
 }
 
-#banner .planos p
+#banner .login p
 {
     font-size: 2vw;
     line-height: 3vw;
@@ -114,189 +114,74 @@ body
 
 main
 {
-    align-items: center;
+    height: 100%;    
+    padding-top: 10vw;
+    width: 100%;
+
+}
+
+main .dados_cadastrais
+{
     display: flex;
     flex-direction: column;
-    height: 100%;    
-    padding-top: 16vw;
-    width: 100%;
+    padding-bottom: 10vw;
+    padding-left: 10vw;
 }
 
 main h2
 {
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: 100;
     letter-spacing: .05em;
-    padding-bottom: 2em;
-    text-align: center;
+    padding-bottom: 2vw;
 }
 
-main .tipos_planos 
+main form p
 {
-    display: grid;
-    grid-template-columns: 20vw 30vw 20vw;
-}
-
-main .tipos_planos h2
-{
-    padding-bottom: 0px;
-}
-
-main .tipos_planos a
-{
-    background-color: #ff0000;
-    border-radius: 1.5vw;
-    color: white;
-    padding: 1vw 3vw;
-    text-decoration: none;
-}
-
-main .tipos_planos .periodo
-{
-    letter-spacing: .2vw
-}
-
-main .tipos_planos .free
-{
-    align-items: center;
-    border-style: solid;
-    border-width: 2px 0px 2px 2px;
-    box-shadow: 4px 8px 8px #b9b9b9b9;
-    display: grid;
-    font-size: 1.4vw;
-    grid-template-rows: 8vw 3vw 2vw 10vw 5vw;
-    margin: 3vw 0px;
-    text-align: center;
-}
-
-main .tipos_planos .free h2
-{
-    font-size: 3vw;
-}
-
-main .tipos_planos .free .preco
-{
-    font-size: 2vw;
-    font-weight: 900;
-    letter-spacing: .3vw;
-}
-
-main .tipos_planos .desc_free
-{
-    margin: 0px 2.5vw;
-    text-align: justify;
-}
-
-main .tipos_planos .basico
-{
-    align-items: center;
-    border-style: solid;
-    box-shadow: 8px 8px 8px #b9b9b9b9;
-    display: grid;
-    font-size: 2vw;
-    grid-template-rows: 8vw 4vw 3vw 16vw 5vw;
-    padding-bottom: 3vw;
-    text-align: center;
-}
-
-main .tipos_planos .basico .preco
-{
-    font-size: 3.5vw;
-    font-weight: 900;
-    letter-spacing: .3vw;
-}
-
-main .tipos_planos .desc_basico
-{
-    font-size: 1.8vw;
-    margin: 0px 5vw;
-    text-align: justify;
-}
-
-main .tipos_planos .basico a
-{
-    padding: 1vw 5vw;
-    font-size: 2vw;
-}
-
-main .tipos_planos .premium
-{
-    align-items: center;
-    border-style: solid;
-    border-width: 2px 2px 2px 0px;
-    box-shadow: 4px 8px 8px #b9b9b9b9;
-    display: grid;
-    font-size: 1.4vw;
-    grid-template-rows: 8vw 3vw 2vw 10vw 5vw;
-    margin: 3vw 0px;
-    text-align: center;
-}
-
-main .tipos_planos .premium h2
-{
-    font-size: 3vw;
-}
-
-main .tipos_planos .premium .preco
-{
-    font-size: 2vw;
-    font-weight: 900;
-    letter-spacing: .3vw;
-}
-
-main .tipos_planos .desc_premium
-{
-    margin: 0px 2.5vw;
-    text-align: justify;
-}
-
-main #clientes
-{
-    align-items: center;
-    display: grid;
-    grid-gap: 4vw;
-    grid-template-columns: 5vw 5vw 10vw 5vw 5vw 5vw 5vw;
-    grid-template-rows: 10vh;
-    justify-items: center;
-    margin: 20vw;
-}
-
-main #clientes img
-{
-    filter: opacity(25%);
-    height: 100%;
-    width: 100%;
-}
-
-main .comentarios
-{
-    display: grid;
     font-size: 1.5vw;
-    grid-column-gap: 5vw;
-    grid-row-gap: 5vw;
-    grid-template-columns: 20vw 20vw 20vw;
-    grid-template-rows: 15vw 15vw;
+    font-weight: 900;
+    letter-spacing: .05em;
+    margin-bottom: .5vw;
 }
 
-main .comentarios h3
+main form .campo
 {
-    letter-spacing: 0.2vw;
-    padding-bottom: 2vh;
+    background-color: rgb(220, 220, 220);
+    border: 2px solid;
+    border-radius: 10px 10px;
+    height: 3.5vw;
+    letter-spacing: .05em;
+    margin-bottom: 2vw;
+    width: 30vw;
 }
 
-main .comentarios .botao_comentar
+main form input
 {
-    grid-area: 3 / 3;
+    font-size: 1vw;
+    padding-left: 1vw;
 }
 
-main .comentarios a
+main form input:focus
+{
+    border: 3px solid;
+    outline: none;
+}
+
+main form .botao
 {
     background-color: #ff0000;
-    border-radius: 1.5vw;
+    border-radius: 1vw;
     color: white;
-    padding: 1vw 2vw;
-    text-decoration: none;
+    font-size: 1.1vw;
+    margin-left: 3vw;
+    padding: .8vw 3vw;
 }
+
+main form .botao:hover
+{
+    background-color: #e20000;
+}
+
 
 footer
 {

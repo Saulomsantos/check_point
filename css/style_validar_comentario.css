@@ -84,7 +84,7 @@ body
     height: 39vw;
 }
 
-#banner .planos
+#banner .validar_comentario
 {
     align-items: center;
     color: white;
@@ -95,7 +95,7 @@ body
     width: 100%;
 }
 
-#banner .planos h1
+#banner .validar_comentario h1
 {
     font-weight: 100;
     font-size: 4vw;
@@ -104,7 +104,7 @@ body
     text-transform: uppercase;
 }
 
-#banner .planos p
+#banner .validar_comentario p
 {
     font-size: 2vw;
     line-height: 3vw;
@@ -114,188 +114,53 @@ body
 
 main
 {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 100%;    
-    padding-top: 16vw;
-    width: 100%;
-}
-
-main h2
-{
-    font-size: 4vw;
-    font-weight: 100;
-    letter-spacing: .05em;
-    padding-bottom: 2em;
-    text-align: center;
-}
-
-main .tipos_planos 
-{
-    display: grid;
-    grid-template-columns: 20vw 30vw 20vw;
-}
-
-main .tipos_planos h2
-{
-    padding-bottom: 0px;
-}
-
-main .tipos_planos a
-{
-    background-color: #ff0000;
-    border-radius: 1.5vw;
-    color: white;
-    padding: 1vw 3vw;
-    text-decoration: none;
-}
-
-main .tipos_planos .periodo
-{
-    letter-spacing: .2vw
-}
-
-main .tipos_planos .free
-{
-    align-items: center;
-    border-style: solid;
-    border-width: 2px 0px 2px 2px;
-    box-shadow: 4px 8px 8px #b9b9b9b9;
-    display: grid;
-    font-size: 1.4vw;
-    grid-template-rows: 8vw 3vw 2vw 10vw 5vw;
-    margin: 3vw 0px;
-    text-align: center;
-}
-
-main .tipos_planos .free h2
-{
-    font-size: 3vw;
-}
-
-main .tipos_planos .free .preco
-{
-    font-size: 2vw;
-    font-weight: 900;
-    letter-spacing: .3vw;
-}
-
-main .tipos_planos .desc_free
-{
-    margin: 0px 2.5vw;
-    text-align: justify;
-}
-
-main .tipos_planos .basico
-{
-    align-items: center;
-    border-style: solid;
-    box-shadow: 8px 8px 8px #b9b9b9b9;
-    display: grid;
-    font-size: 2vw;
-    grid-template-rows: 8vw 4vw 3vw 16vw 5vw;
-    padding-bottom: 3vw;
-    text-align: center;
-}
-
-main .tipos_planos .basico .preco
-{
-    font-size: 3.5vw;
-    font-weight: 900;
-    letter-spacing: .3vw;
-}
-
-main .tipos_planos .desc_basico
-{
-    font-size: 1.8vw;
-    margin: 0px 5vw;
-    text-align: justify;
-}
-
-main .tipos_planos .basico a
-{
-    padding: 1vw 5vw;
-    font-size: 2vw;
-}
-
-main .tipos_planos .premium
-{
-    align-items: center;
-    border-style: solid;
-    border-width: 2px 2px 2px 0px;
-    box-shadow: 4px 8px 8px #b9b9b9b9;
-    display: grid;
-    font-size: 1.4vw;
-    grid-template-rows: 8vw 3vw 2vw 10vw 5vw;
-    margin: 3vw 0px;
-    text-align: center;
-}
-
-main .tipos_planos .premium h2
-{
-    font-size: 3vw;
-}
-
-main .tipos_planos .premium .preco
-{
-    font-size: 2vw;
-    font-weight: 900;
-    letter-spacing: .3vw;
-}
-
-main .tipos_planos .desc_premium
-{
-    margin: 0px 2.5vw;
-    text-align: justify;
-}
-
-main #clientes
-{
-    align-items: center;
-    display: grid;
-    grid-gap: 4vw;
-    grid-template-columns: 5vw 5vw 10vw 5vw 5vw 5vw 5vw;
-    grid-template-rows: 10vh;
-    justify-items: center;
-    margin: 20vw;
-}
-
-main #clientes img
-{
-    filter: opacity(25%);
     height: 100%;
+    padding-bottom: 10vw;
+    padding-top: 10vw;
     width: 100%;
 }
 
 main .comentarios
 {
+    align-items: center;
     display: grid;
-    font-size: 1.5vw;
-    grid-column-gap: 5vw;
-    grid-row-gap: 5vw;
-    grid-template-columns: 20vw 20vw 20vw;
+    grid-gap: 15vw 20vw;
+    grid-template-columns: 25vw 25vw;
     grid-template-rows: 15vw 15vw;
+    justify-content: center;
+    justify-items: center;
+    text-align: justify;
 }
 
 main .comentarios h3
 {
-    letter-spacing: 0.2vw;
-    padding-bottom: 2vh;
+    font-size: 2vw;
+    font-weight: 900;
+    letter-spacing: .1em;
+    padding-bottom: 1vw;
 }
 
-main .comentarios .botao_comentar
+main .comentarios p
 {
-    grid-area: 3 / 3;
+    font-size: 1.5vw;
+    letter-spacing: .05em;
+    margin-bottom: 3vw;
 }
 
-main .comentarios a
+main .comentarios .botao
 {
     background-color: #ff0000;
-    border-radius: 1.5vw;
+    border-radius: 1vw;
     color: white;
-    padding: 1vw 2vw;
-    text-decoration: none;
+    font-size: 1.1vw;
+    margin-left: 1vw;
+    padding: .8vw 3vw;
+    outline: none;
+}
+
+main .comentarios .botao:hover
+{
+    background-color: #e20000;
 }
 
 footer

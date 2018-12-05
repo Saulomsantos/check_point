@@ -341,9 +341,9 @@ footer .carlos h4
 
 footer .container_footer .linha_vertical
 {
-    border-left: 1px solid white;
+    border-left: 2px solid white;
     grid-area: 1 / 2;
-    height: 16vw;
+    height: 15vw;
 }
 
 footer .container_footer .felipe
